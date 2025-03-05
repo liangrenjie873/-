@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUT测试</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="question-container">
+        <h2 class="title">泪膜破裂时间（BUT）测试</h2>
+        <div id="instructions">
+            <p>请按照以下步骤进行测试：</p>
+            <ol>
+                <li>请保持眼睛自然睁开，不要眨眼</li>
+                <li>观察屏幕上的计时器</li>
+                <li>当您感觉眼睛开始不适或需要眨眼时，请点击"停止"按钮</li>
+                <li>测试将进行3次，取平均值</li>
+            </ol>
+        </div>
+        <div id="test-area">
+            <div class="timer">0</div>
+            <div class="controls">
+                <button id="start-btn" class="control-button">开始</button>
+                <button id="stop-btn" class="control-button" disabled>停止</button>
+                <button id="reset-btn" class="control-button">重置</button>
+            </div>
+            <div class="progress">
+                <div class="progress-text">
+                    <span>测试进度</span>
+                    <span id="progress-text">0/3</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+            <div class="but-button-container">
+                <a href="index.html" class="but-back-button">返回主页</a>
+            </div>
+        </div>
+        <div id="result" style="display: none;">
+            <h3>测试结果</h3>
+            <p>您的BUT平均值：<span id="score"></span> 秒</p>
+            <button class="back-button" onclick="window.location.href='index.html'">返回主页</button>
+        </div>
+    </div>
+    <script src="but.js"></script>
+</body>
+</html> 
